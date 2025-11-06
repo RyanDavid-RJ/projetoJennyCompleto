@@ -1,0 +1,551 @@
+/* PARAMETROS */
+
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background-color: #ffffff;
+
+  color: #1a1a1a;
+
+  overflow-x: hidden;
+
+  background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+.mainContainer {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 0 2rem;
+
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ======================================== */
+
+/* HEADER */
+
+header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 2rem 0;
+}
+
+.logo {
+  display: flex;
+
+  align-items: center;
+
+  font-weight: 700;
+
+  font-size: 1.5rem;
+}
+
+.logo img {
+  width: 25px;
+
+  margin-right: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+
+  gap: 2.5rem;
+}
+
+nav ul li a {
+  font-weight: 500;
+
+  padding-bottom: 5px;
+}
+
+nav ul li a.home,
+nav ul li a:hover {
+  color: #5c2cfa;
+
+  border-bottom: 2px solid #5c2cfa;
+}
+
+.btnContact {
+  background-color: #5c2cfa;
+
+  color: #fff;
+
+  padding: 0.75rem 1.5rem;
+
+  border-radius: 50px;
+
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.btnContact:hover {
+  background-color: #bfff80;
+
+  color: #1a1a1a;
+}
+
+/* ======================================== */
+
+/* MAIN */
+
+main {
+  padding: 3rem 0 0;
+
+  position: relative;
+}
+
+.conteudo {
+  text-align: center;
+
+  position: relative;
+
+  min-height: 635px;
+}
+
+.conteudo .hello {
+  font-size: 1.2rem;
+
+  margin-bottom: 1rem;
+}
+
+.conteudo h1 {
+  font-size: 4.5rem;
+
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.conteudo h1 .highlight {
+  color: #5c2cfa;
+
+  text-decoration: underline;
+
+  text-decoration-thickness: 3px;
+
+  transition: all 0.3s ease;
+}
+
+.conteudo h1 .highlight:hover {
+  color: #bfff80;
+}
+
+.imagemPrincipal {
+  position: absolute;
+
+  z-index: 2;
+
+  top: 139px;
+
+  left: 45%;
+
+  transform: translateX(-50%);
+
+  max-width: 500px;
+
+  width: 100%;
+}
+
+.jennyFoto {
+  z-index: 2;
+
+  max-width: 134%;
+
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15));
+}
+
+.botoes {
+  position: absolute;
+
+  z-index: 3;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  bottom: 50px;
+
+  background-color: #fff;
+
+  padding: 0.4rem;
+
+  border-radius: 50px;
+
+  height: 70px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+
+  gap: 1.5rem;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.btn {
+  padding: 1rem 2rem;
+
+  border-radius: 50px;
+
+  font-weight: 600;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  transition: all 0.3s ease;
+}
+
+.btnPortifolio {
+  background-color: #5c2cfa;
+
+  color: #fff;
+}
+
+.btnPortifolio:hover {
+  background-color: #bfff80;
+
+  color: #1a1a1a;
+}
+
+.btnPortifolio:hover .setaContainer {
+  background-color: #5c2cfa;
+
+  transform: translateX(10px);
+}
+
+.btnPortifolio:hover .seta {
+  color: #ffffff;
+}
+
+.btnPortifolio .seta {
+  margin-left: 0;
+
+  font-size: 1.2rem;
+
+  color: #1a1a1a;
+
+  margin-bottom: 4px;
+
+  transition: all 0.3s ease;
+}
+
+.setaContainer {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 30px;
+
+  height: 30px;
+
+  border-radius: 50%;
+
+  background-color: #bfff80;
+
+  margin-left: 0.5rem;
+
+  transition: all 0.3s ease;
+}
+
+.btnHireMe {
+  background-color: #fff;
+
+  color: #1a1a1a;
+
+  border: 3px solid #a0a0a0c5;
+
+  padding: 1rem 2.2rem;
+}
+
+.btnHireMe:hover {
+  background-color: #f0f0f0;
+
+  border-color: #707070;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ======================================== */
+
+/* FOOTER */
+
+.bannerFooter {
+  width: 100%;
+
+  background-color: #bfff80;
+
+  padding: 2.5rem 0;
+
+  position: relative; 
+
+  z-index: 10; 
+}
+
+.bannerFooter ul {
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 0 2rem;
+}
+
+.bannerFooter li {
+  font-size: 1.25rem;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.bannerFooter li span {
+  margin-left: 1rem;
+
+  font-weight: 400;
+
+  font-size: 1.5rem;
+}
+
+/* ======================================== */
+
+/* SERVICES */
+
+.services {
+    width: 100%;
+    background-color: #4831d4; /* Cor roxa da imagem */
+    color: #ffffff;
+    padding: 6rem 0;
+    position: relative;
+}
+
+/* Container para centralizar o conteúdo */
+.svcConteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.svcHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.svcSubtitulo {
+    font-size: 1.1rem;
+    color: #b0a8e9; 
+}
+
+.svcHeader h2 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+.svcHeader h2 span{
+    color: #bfff80; 
+}
+
+.btnViewAll {
+    background-color: #bfff80;
+    color: #1a1a1a;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btnViewAllSeta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #4831d4;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.btnViewAll:hover {
+    background-color: #fff;
+}
+
+.btnViewAll:hover .btnViewAllSeta {
+    transform: translateX(5px);
+    background-color: #5c2cfa;
+}
+
+.svcLista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.svcCartao {
+    padding: 2.5rem;
+    border-radius: 20px;
+}
+
+.cartaoIcone {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.svcCartao h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.svcCartao p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.btnLearnMore {
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btnLearnMore:hover {
+    letter-spacing: 0.5px;
+}
+
+/* 2. ESTILOS DOS MODIFICADORES (AS DIFERENÇAS) */
+
+/* -- Variação Clara -- */
+.cartao-claro {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+.icone-claro {
+    background-color: #5c2cfa;
+    color: #fff;
+}
+.cartao-claro p {
+    color: #6b7280;
+}
+.cartao-claro .btnLearnMore {
+    color: #1a1a1a;
+}
+
+/* -- Variação Escura -- */
+.cartao-escuro {
+    background-color: #3d26b1;
+    color: #fff;
+}
+.icone-escuro {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+.cartao-escuro p {
+    color: #d1c9ff;
+}
+.cartao-escuro .btnLearnMore {
+    color: #fff;
+}
+/* ======================================= */
+
+.about {
+  width: 100%;
+
+  background-color: #e70b0b;
+
+  height: 1500px;
+
+  position: relative;
+}
+
+/* ======================================== */
+
+/* PROJECTS */
+.projects {
+  width: 100%;
+
+  background-color: #df9d0e;
+
+  height: 1500px;
+
+  position: relative;
+}
+
+.blogs {
+  width: 100%;
+
+  background-color: #ccc90c;
+
+  height: 1500px;
+
+  position: relative;
+}
+
+.testimonials {
+  width: 100%;
+
+  background-color: #08d42a;
+
+  height: 1500px;
+
+  position: relative;
+}
