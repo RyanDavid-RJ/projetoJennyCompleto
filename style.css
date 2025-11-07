@@ -401,12 +401,12 @@ main {
 .btnViewAll {
     background-color: #bfff80;
     color: #1a1a1a;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0.001rem;
     border-radius: 50px;
     font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem; /**/
     transition: all 0.3s ease;
     margin-top: 3rem;
     margin-right: -100px;
@@ -422,15 +422,25 @@ main {
     background-color: #4831d4;
     color: #fff;
     font-size: 1.2rem;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
+    margin-left: -40px;
+    
+    
 }
 
 .btnViewAll:hover {
     background-color: #fff;
 }
 
+
+.btnViewAll:hover {
+    background-color: #fff;
+    gap: 0.5rem; /**/
+}
+
+
 .btnViewAll:hover .btnViewAllSeta {
-    transform: translateX(5px);
+    transform: translateX(180px);
     background-color: #5c2cfa;
 }
 
@@ -442,12 +452,16 @@ main {
 
 .svcCartao {
     padding: 2.5rem;
-    border-radius: 0px;
+    border-radius: 190px;
+    min-height: 450px; 
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cartaoIcone {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -455,31 +469,23 @@ main {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-}
-
-.svcCartao h3 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+    margin-left: 90px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .svcCartao p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
+    margin-left: 30px;
+    
+    transition: color 0.3s ease;
 }
 
-.btnLearnMore {
-    font-weight: 600;
-    transition: all 0.3s ease;
+.svcCartao h3{
+  margin-left: 80px;
 }
 
-.btnLearnMore:hover {
-    letter-spacing: 0.5px;
-}
-
-/* 2. ESTILOS DOS MODIFICADORES (AS DIFERENÇAS) */
-
-/* -- Variação Clara -- */
 .cartao-claro {
     background-color: #fff;
     color: #1a1a1a;
@@ -490,14 +496,15 @@ main {
 }
 .cartao-claro p {
     color: #6b7280;
+    
 }
 .cartao-claro .btnLearnMore {
     color: #1a1a1a;
 }
 
-/* -- Variação Escura -- */
 .cartao-escuro {
-    background-color: #3d26b1;
+
+    background-color: #3d26b1; 
     color: #fff;
 }
 .icone-escuro {
@@ -510,8 +517,40 @@ main {
 .cartao-escuro .btnLearnMore {
     color: #fff;
 }
-/* ======================================= */
 
+.cartao-claro:hover {
+    background-color: #3d26b1; 
+    color: #fff; 
+}
+.cartao-claro:hover p {
+    color: #ffffff; 
+}
+.cartao-claro:hover .btnLearnMore {
+    color: #fff; 
+}
+.cartao-claro:hover .icone-claro {
+    background-color: #fff; 
+    color: #1a1a1a; 
+}
+
+.cartao-escuro:hover {
+    background-color: #fff; 
+    color: #1a1a1a; 
+}
+.cartao-escuro:hover p {
+    color: #6b7280; 
+}
+.cartao-escuro:hover .btnLearnMore {
+    color: #1a1a1a; 
+}
+.cartao-escuro:hover .icone-escuro {
+    background-color: #5c2cfa; 
+    color: #fff; 
+}
+
+/* ======================================== */
+
+/* ABOUT */
 .about {
   width: 100%;
 
